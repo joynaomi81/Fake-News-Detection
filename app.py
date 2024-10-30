@@ -12,7 +12,6 @@ st.title("Fake News Detector App")
 st.write("""
 ### Enter the news text below to determine if it's Real or Fake.
 """)
-
 # Text input for user to provide news content
 user_input = st.text_area("Enter the news content:", "")
 
@@ -26,8 +25,8 @@ if st.button("Predict"):
         # Make prediction using the loaded model
         prediction = model.predict(transformed_input)
 
-        # Display result
+        # Display result based on the new logic
         if prediction[0] == 1:
-            st.error("This news is  FAKE.")
-        else:
             st.success("This news is REAL.")
+        else:
+            st.error("This news is FAKE.")
