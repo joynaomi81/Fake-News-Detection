@@ -10,7 +10,7 @@ st.title("Fake News Detector App")
 
 # Instructions
 st.write("""
-### Enter the news text below to determine if it's Real or Fake.
+### Enter news text.
 """)
 # Text input for user to provide news content
 user_input = st.text_area("Enter the news content:", "")
