@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 
 # Load the Logistic Regression model and TF-IDF vectorizer
-model = joblib.load('logistic_regression_model (1).pkl')
-vectorizer = joblib.load('tfidf_vectorizer (7).pkl')
+model = joblib.load('logistic_regression_model.pkt')
+vectorizer = joblib.load('tfidf_vectorizer (1).pkt')
 
 # Streamlit app title
 st.title("Fake News Detector App")
